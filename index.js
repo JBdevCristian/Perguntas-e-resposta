@@ -7,26 +7,11 @@ app.use(express.static('public')); //definindo arquivos staticos (Arquivos de im
 
 
 app.get("/:nome/:lang", (req, res) => {
-    var nome = req.params.nome
-    var lang = req.params.lang
-    var exibirMSG = false
+    res.render("home")
+});
 
-    var produtos = [
-        {nome: "Doritos", preco: 3.14},
-        {nome: "Coca", preco: 5},
-        {nome: "Leite", preco: 1.45}
-
-    ]
-
-    res.render("home", {
-        nome: nome,
-        lang: lang,
-        empresa: "Guia do programador",
-        inscritos: 8000,
-        msg: exibirMSG,
-        produtos: produtos
-    })
-
+app.get("/perguntar", (req, res) => {
+    res.render("perguntar")
 });
 
 app.listen(8080,()=>{

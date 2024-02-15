@@ -10,26 +10,9 @@
 </head>
     <body>
         
-        <img src="/img/paypal.jpg" alt="">
-        <h1>Guia perguntas!</h1>
-        <hr>
-        <h3>Lista de perguntas</h3>
+        <div class="container">
 
-        <p>Nome: <%= nome %></p> 
-        <p>Linguagem favorita: <%= lang %></p> 
-        <p>Empresa: <%= empresa %></p> 
-        <p>Numero de inscritos: <%= inscritos %></p> 
-
-        <% if(msg == true) { %>
-            <h3>Isso é uma msg de erro</h3>
-        <%} else {%>
-            <h3>Nenhum erro!</h3>
-        <%}%>
-
-        <% produtos.forEach(function(produto) { %>
-            <hr>
-            <p><%= produto.nome %> meu preço é <%= produto.preco %></p>
-        <%})%>
+        </div>
 
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
