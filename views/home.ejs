@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Guia perguntas</title>
 </head>
     <body>
@@ -21,7 +22,11 @@
         <%} else {%>
             <h3>Nenhum erro!</h3>
         <%}%>
-        
+
+        <% produtos.forEach(function(produto) { %>
+            <hr>
+            <p><%= produto.nome %> meu preço é <%= produto.preco %></p>
+        <%})%>
 
 
     </body>
